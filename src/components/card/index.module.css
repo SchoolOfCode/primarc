@@ -1,20 +1,32 @@
 .cardContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
+  width: 20%;
   flex: 33%;
+  text-align: center;
+  padding-bottom: 3vh;
 }
 
 .cardContainer img {
   max-width: 50em;
   max-height: 10em;
 }
+.favourite {
+  height: 1vw;
+}
 
 @media (max-width: 767px) {
   .cardContainer {
     flex: 50%;
+  }
+  .cardContainer img {
+    max-width: 10em;
+    max-height: 10em;
+  }
+  .favourite {
+    height: 4vw;
   }
 }
