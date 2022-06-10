@@ -1,6 +1,9 @@
 import "./App.css";
+
 import Navbar from "../navbar";
 import { useState, useEffect } from "react";
+import CategoryContainer from "../CategoryContainer";
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,6 +24,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar onClick={onClick} />
+        <CategoryContainer category={`Women's Clothing`} />
+        <CategoryContainer category={`Men's Clothing`} />
+        <CategoryContainer category={`Jewelery`} />
+        <CategoryContainer category={`Electronics`} />
       </header>
     </div>
   );
