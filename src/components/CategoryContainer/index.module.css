@@ -1,0 +1,14 @@
+.categoryContainer {
+  text-align: center;
+}
+.categoryContainer h2 {
+  font-size: 2rem;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
