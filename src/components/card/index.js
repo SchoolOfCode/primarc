@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 
-function Card({image, title, description, price}) {
-
+function Card({ data }) {
+  console.log(JSON.stringify(data));
   return (
     <div>
-    <img src={image} />
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <p>{price}</p>
+      <img src={data.image} />
+      <h3>{data.title}</h3>
+      <p>{data.description}</p>
+      <p>{data.price}</p>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;
