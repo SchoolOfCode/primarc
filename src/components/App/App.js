@@ -4,13 +4,11 @@ import Navbar from "../navbar";
 import { useState, useEffect } from "react";
 import CategoryContainer from "../CategoryContainer";
 
-
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   function onClick() {
     setDarkMode(!darkMode);
-    console.log("dark mode enabled");
   }
 
   useEffect(() => {
