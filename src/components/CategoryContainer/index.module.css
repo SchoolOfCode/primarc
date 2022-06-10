@@ -1,4 +1,8 @@
 .categoryContainer {
+  text-align: center;
+}
+.categoryContainer h2 {
+  font-size: 2rem;
 }
 
 .cardsContainer {

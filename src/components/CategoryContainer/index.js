@@ -14,8 +14,6 @@ function CategoryContainer({ category }) {
       setItems(data);
     }
     fetchData();
-
-    console.log(items);
   }, []);
 
   return (
@@ -23,8 +21,8 @@ function CategoryContainer({ category }) {
       <h2>{category}</h2>
       <div className={css.cardsContainer}>
         {items
-          ? items.map((item) => {
-              return <Card data={item} />;
+          ? items.map((item, index) => {
+              return <Card data={item} key={index} />;
             })
           : `Loading Data...`}
       </div>
