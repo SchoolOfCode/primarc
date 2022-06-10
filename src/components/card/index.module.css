@@ -1,0 +1,20 @@
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex: 33%;
+}
+
+.cardContainer img {
+  max-width: 50em;
+  max-height: 10em;
+}
+
+@media (max-width: 767px) {
+  .cardContainer {
+    flex: 50%;
+  }
+}
