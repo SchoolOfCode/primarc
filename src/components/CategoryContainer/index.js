@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../card";
+import css from "./index.module.css";
 
 function CategoryContainer({ category }) {
   const [items, setItems] = useState(null);
@@ -18,9 +19,15 @@ function CategoryContainer({ category }) {
   }, []);
 
   return (
-    <div>
+    <div className={css.categoryContainer}>
       <h2>{category}</h2>
-      {items ? <Card data={items[0]} /> : `Loading Data...`}
+      <div className={css.cardsContainer}>
+        {items
+          ? items.map((item) => {
+              return <Card data={item} />;
+            })
+          : `Loading Data...`}
+      </div>
     </div>
   );
 }

@@ -1,12 +1,15 @@
 import React from "react";
+import css from "./index.module.css";
 
 function Card({ data }) {
   console.log(JSON.stringify(data));
   return (
-    <div>
-      <img src={data.image} />
+    <div className={css.cardContainer}>
+      <div>
+        <img src={data.image} />
+      </div>
       <h3>{data.title}</h3>
-      <p>{data.description}</p>
+      <p>{data.description.slice(0, 50) + "..."}</p>
       <p>{data.price}</p>
     </div>
   );

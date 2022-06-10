@@ -6,7 +6,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Primarc</p>
-        <CategoryContainer category={`women's clothing`}/>
+        <CategoryContainer category={`Women's Clothing`} />
+        <CategoryContainer category={`Men's Clothing`} />
+        <CategoryContainer category={`Jewelery`} />
+        <CategoryContainer category={`Electronics`} />
       </header>
     </div>
   );
