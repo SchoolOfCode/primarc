@@ -6,7 +6,7 @@ function Card({ data }) {
   return (
     <div className={css.cardContainer}>
       <div>
-        <img src={data.image} />
+        <img src={data.image} alt={data.title} />
       </div>
       <h3>{data.title}</h3>
       <p>{data.description.slice(0, 50) + "..."}</p>
